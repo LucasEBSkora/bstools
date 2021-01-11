@@ -1,0 +1,107 @@
+{
+	"$schema": "https://raw.githubusercontent.com/martinring/tmlanguage/master/tmlanguage.json",
+	"name": "ΒScript",
+	"patterns": [
+		{
+			"include": "#keywords"
+		},
+		{
+			"include": "#strings"
+		},
+		{
+			"name": "comment.block",
+			"begin": "/\\*",
+			"end": "\\*/"
+		},
+		{
+			"name": "comment.line.double-slash",
+			"match": "\/\/[^\n\r]*"
+		},
+		{
+			"name": "comment.word",
+			"match": "@\\S*"
+		},
+		{
+			"name": "comment.word.directive",
+			"match": "#\\S*"
+		},
+		{
+			"name": "constant.numeric",
+			"match": "[0-9]*\\.[0-9]+|\\b[0-9]+"
+		},
+		{
+			"name": "constant.language.logical",
+			"match": "\\b(true|false|unknown)\\b"
+		},
+		{
+			"name": "constant.language",
+			"match": "\\bnil\\b"
+		},
+		{
+			"name": "keyword.operator.function",
+			"match": "\\+|-|\\*|\\^|∂|del|'"
+		},
+		{
+			"name": "keyword.operator.logic",
+			"match": "\\b(?:and|or|not)\\b|∧|∨|¬"
+		},
+		{
+			"name": "keyword.operator.set",
+			"match": "\\b(?:belongs|union|intersection|contained|disjoined)\\b|∈|∪|∩|⊂|\\\\|\\|"
+		},
+		{
+			"name": "keyword.operator.comparison",
+			"match": "={2,3}|<=?|>=?"
+		},
+		{
+			"name": "keyword.other.print",
+			"match": "\\bprint\\b"
+		},
+		{
+			"name": "storage.type",
+			"match": "\\b(let|class|routine)\\b"
+		},
+		{
+			"name": "variable.language",
+			"match": "\\b(?:this?super)\\b"
+		},
+		{
+			"name": "support.variable",
+			"match": "\\b(?:abs|sgn|sqrt|log|ln|sin|cos|tan|sec|csc|ctg|arcsin|arccos|arctan|arcsec|arccsc|arcctg|sinh|cosh|tanh|sech|csch|ctgh|arsinh|arcosh|artanh|arsech|arcsch|arctgh)\\b"
+		},
+		{
+			"name": "support.constant",
+			"match": "\\b(?:e|pi|π|infinity|∞|emptySet|∅)\\b"
+		},
+		{
+			"name": "support.function",
+			"match": "\\bclock\\b"
+		},
+		{
+			"name": "variable.other.bs",
+			"match": "\\b(?:_|[a-z]|[A-Z]|Α|Β|Γ|Δ|Ε|Ζ|Η|Θ|Ι|Κ|Λ|Μ|Ν|Ξ|Ο|Π|Ρ|Σ|Τ|Υ|Φ|Χ|Ψ|Ω|α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ|ν|ξ|ο|π|ρ|ς|σ|τ|υ|φ|χ|ψ|ω)(?:_|[a-z]|[A-Z]|Α|Β|Γ|Δ|Ε|Ζ|Η|Θ|Ι|Κ|Λ|Μ|Ν|Ξ|Ο|Π|Ρ|Σ|Τ|Υ|Φ|Χ|Ψ|Ω|α|β|γ|δ|ε|ζ|η|θ|ι|κ|λ|μ|ν|ξ|ο|π|ρ|ς|σ|τ|υ|φ|χ|ψ|ω|[0-9])*\\b"
+		}	
+	],
+	"scopeName": "source.betascript",
+	"repository": {
+		"keywords": {
+			"patterns": [
+				{
+					"name": "keyword.control.betascript",
+					"match": "\\b(?:if|else|while|for|return)\\b"
+				}
+			]
+		},
+		"strings": {
+			"name": "string.quoted.double.betascript",
+			"begin": "\"",
+			"end": "\"",
+			"patterns": [
+				{
+					"name": "constant.character.escape.betascript",
+					"match": "\\\\."
+				}
+			]
+		}
+	}
+}

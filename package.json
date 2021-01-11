@@ -1,0 +1,25 @@
+{
+    "name": "bstools",
+    "displayName": "bstools",
+    "description": "extension for the BScript programming language",
+    "version": "0.0.1",
+    "engines": {
+        "vscode": "^1.52.0"
+    },
+    "categories": [
+        "Programming Languages"
+    ],
+    "contributes": {
+        "languages": [{
+            "id": "betascript",
+            "aliases": ["ΒScript", "betascript"],
+            "extensions": [".bs"],
+            "configuration": "./language-configuration.json"
+        }],
+        "grammars": [{
+            "language": "betascript",
+            "scopeName": "source.betascript",
+            "path": "./syntaxes/betascript.tmLanguage.json"
+        }]
+    }
+}
