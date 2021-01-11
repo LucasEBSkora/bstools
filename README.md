@@ -5,7 +5,7 @@ Tools for the ΒScript programming language: syntax highlighting and formatting,
 ## Features
 
 Syntax highlighting, formatting
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+<!-- Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
 
 For example if there is an image subfolder under your extension project workspace:
 
@@ -24,11 +24,11 @@ For example:
 This extension contributes the following settings:
 
 * `myExtension.enable`: enable/disable this extension
-* `myExtension.thing`: set to `blah` to do something
+* `myExtension.thing`: set to `blah` to do something -->
 
-## Known Issues
+<!-- ## Known Issues -->
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+<!-- Calling out known issues can help limit users opening duplicate issues against your extension. -->
 
 ## Release Notes
 
